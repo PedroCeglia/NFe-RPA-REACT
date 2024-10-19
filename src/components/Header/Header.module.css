@@ -1,0 +1,15 @@
+.Header {
+  height: 80px;
+  width: calc(100%);
+  background-color: rgb(119, 66, 219);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.Logo {
+  color: rgb(238, 238, 226);
+  text-decoration: none;
+}

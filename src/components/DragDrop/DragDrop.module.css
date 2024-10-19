@@ -1,0 +1,24 @@
+.Container {
+  border: 2px dashed #0070f3;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+}
+.Container p {
+  margin: 10px;
+}
+.Titulo {
+  padding: 10px 20px;
+}
+.FilesList {
+  max-width: 400px;
+}
+.FilesList h4 {
+  margin: 20px 10px;
+}
+.FilesList button {
+  margin: 5px;
+}

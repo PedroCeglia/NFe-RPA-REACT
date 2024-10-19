@@ -1,0 +1,22 @@
+.HiddenContainer {
+  display: none;
+}
+.Container {
+  width: 90%;
+  max-width: 900px;
+
+  background-color: rgb(203, 170, 234);
+  display: flex;
+  flex-direction: column;
+  flex-direction: flex-start;
+  align-items: center;
+
+  border-radius: 20px;
+  padding: 15px;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .Container {
+    width: 98%;
+  }
+}

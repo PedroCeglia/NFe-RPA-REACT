@@ -1,0 +1,31 @@
+.Container {
+  width: 90%;
+  max-width: 900px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(203, 170, 234);
+  border-radius: 20px;
+  gap: 5px;
+}
+
+.ItemContainer {
+  width: 100%;
+  background-color: rgb(224, 207, 239);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.ItemContainer p {
+  width: 100%;
+  padding: 5px;
+
+  text-align: center;
+}
+.ItemContainer p:nth-of-type(1) {
+  border-right: 1px solid black;
+}

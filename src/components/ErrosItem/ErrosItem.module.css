@@ -1,0 +1,116 @@
+.HiddenContainer {
+  display: none;
+}
+.Container {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(224, 207, 239);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.Title img {
+  width: 60px;
+}
+.ButtonSetaDesactive,
+.ButtonSetaActive {
+  background: transparent;
+  align-self: center;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.ButtonSetaDesactive img {
+  width: 20px;
+  animation: bounce 1s infinite;
+}
+.ButtonSetaActive img {
+  width: 20px;
+  animation: bounceReverse 1s infinite;
+}
+
+/* Animação CSS */
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(90deg); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(10px) rotate(90deg); /* Mover para baixo */
+  }
+  100% {
+    transform: translateY(0) rotate(90deg); /* Voltar à posição inicial */
+  }
+}
+
+@keyframes bounceReverse {
+  0% {
+    transform: translateY(0) rotate(-90deg); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(10px) rotate(-90deg); /* Mover para baixo */
+  }
+  100% {
+    transform: translateY(0) rotate(-90deg); /* Voltar à posição inicial */
+  }
+}
+
+.ItemList {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(203, 170, 234);
+  border-radius: 20px;
+  gap: 5px;
+}
+
+.SubItem {
+  width: 100%;
+  background-color: rgb(224, 207, 239);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.SubItem p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+
+  text-align: center;
+}
+.SubItem p:nth-of-type(1),
+.SubItem p:nth-of-type(2) {
+  border-right: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .SubItem p:nth-of-type(3) {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .SubItem p:nth-of-type(4) {
+    display: none;
+  }
+}
